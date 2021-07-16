@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <meta name="author" content="Eitan Seri-Levi" />
+</head>
+
+<style>
+    .navbar {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        top: 0;
+        left: 0;
+        background-color: #fefefe;
+        height: 145px;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .navbar-container {
+        padding-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .navbar-item {
+        font-family: 'Montserrat';
+        padding: 15px;
+        color: #000000;
+        font-size: 24px;
+    }
+
+    .navbar-item:hover {
+        background-color: #000000;
+        color: #fefefe;
+        cursor: pointer;
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    .sticky+.content {
+        padding-top: 60px;
+    }
+
+    .navbar-image {
+        height: 135px;
+        width: 135px;
+        cursor: pointer;
+    }
+
+    .header {
+        background: url('carlsonbanner.jpg') no-repeat center center fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        margin-bottom: 30px;
+    }
+
+    .content {
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .schedule-background {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.05;
+        background: url('cgsblogo.png') no-repeat center;
+        background-size: auto;
+    }
+
+    .schedule {
+        width: 1000px;
+        height: 100%;
+        position: relative;
+    }
+
+    .schedule-container {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        position: relative;
+        display: grid;
+        grid-template-columns: [time] 150px [monday] auto [tuesday] auto [wednesday] auto [thursday] auto [friday] auto [saturday] auto [sunday] auto [end];
+        grid-template-rows: [row1] 50px [row2] 50px[row3] 50px [row4] 50px [row5] 50px [row6] 50px [row7] 50px [row8] 50px [row9] 50px [row10] 50px [row11] 50px;
+    }
+
+    .schedule-header {
+        background-color: #000000;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fefefe;
+        width: 100%;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .schedule-time-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+    }
+
+    .schedule-day-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+    }
+
+    .schedule-class {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+    }
+
+    .home-container {}
+</style>
+<div class="navbar sticky" id="navbar">
+    <div class="navbar-container">
+        <div>
+            <img class="navbar-image" src="cgsblogo.png">
+        </div>
+        <div class="navbar-item">
+            Home
+        </div>
+        <div class="navbar-item">
+            Our Academy
+        </div>
+        <div class="navbar-item">
+            Schedule
+        </div>
+        <div class="navbar-item">
+            Competition Team
+        </div>
+        <div class="navbar-item">
+            Membership
+        </div>
+        <div class="navbar-item">
+            Contact Us
+        </div>
+        <div>
+            <img class="navbar-image" src="cgsblogo.png">
+        </div>
+    </div>
+</div>
+<div class="header">
+</div>
+<div class="content">
+    <div id="home">
+        <div class="home-container">
+
+        </div>
+    </div>
+    <div id="our-academy">
+
+    </div>
+    <div class="schedule" id="schedule">
+        <div class="schedule-background"></div>
+        <div class="schedule-header">
+            Carlson Gracie South Bay Schedule
+        </div>
+        <div class="schedule-container">
+            <div class="schedule-time-header">Time</div>
+            <div class="schedule-day-header">Monday</div>
+            <div class="schedule-day-header">Tuesday</div>
+            <div class="schedule-day-header">Wednesday</div>
+            <div class="schedule-day-header">Thursday</div>
+            <div class="schedule-day-header">Friday</div>
+            <div class="schedule-day-header">Saturday</div>
+            <div class="schedule-day-header">Sunday</div>
+            <div class="schedule-time-header">9:00 - 10:00AM</div>
+            <div class="schedule-class">Adult BJJ</div>
+            <div class="schedule-class">Adult BJJ</div>
+            <div class="schedule-class">Adult BJJ</div>
+            <div class="schedule-class">Adult BJJ</div>
+            <div class="schedule-class">Adult BJJ</div>
+            <div class="schedule-class"></div>
+            <div class="schedule-class"></div>
+            <div class="schedule-time-header">10:00 - 10:30AM</div>
+            <div class="schedule-class">Open Mat</div>
+            <div class="schedule-class">Open Mat</div>
+            <div class="schedule-class">Open Mat</div>
+            <div class="schedule-class">Open Mat</div>
+            <div class="schedule-class">Open Mat</div>
+            <div class="schedule-class"></div>
+            <div class="schedule-class"></div>
+            <div class="schedule-time-header">10:00 - 12:00PM</div>
+            <div class="schedule-class"></div>
+            <div class="schedule-class"></div>
+            <div class="schedule-class"></div>
+            <div class="schedule-class"></div>
+            <div class="schedule-class"></div>
+            <div class="schedule-class">Open Mat</div>
+            <div class="schedule-class"></div>
+            <div class="schedule-time-header">10:30 - 12:00PM</div>
+            <div class="schedule-class">Adult BJJ</div>
+            <div class="schedule-class">Adult BJJ</div>
+            <div class="schedule-class">Adult BJJ</div>
+            <div class="schedule-class">Adult BJJ</div>
+            <div class="schedule-class">Adult BJJ</div>
+            <div class="schedule-class"></div>
+            <div class="schedule-class"></div>
+            <div class="schedule-time-header">12:00 - 1:00PM</div>
+            <div class="schedule-class">Open Mat</div>
+            <div class="schedule-class">Open Mat</div>
+            <div class="schedule-class">Open Mat</div>
+            <div class="schedule-class">Open Mat</div>
+            <div class="schedule-class">Open Mat</div>
+            <div class="schedule-class"></div>
+            <div class="schedule-class"></div>
+            <div class="schedule-time-header">4:15 - 5:00PM</div>
+            <div class="schedule-class">Kids BJJ 5-7</div>
+            <div class="schedule-class"></div>
+            <div class="schedule-class">Kids BJJ 5-7</div>
+            <div class="schedule-class"></div>
+            <div class="schedule-class">Kids BJJ 5-7</div>
+            <div class="schedule-class"></div>
+            <div class="schedule-class"></div>
+            <div class="schedule-time-header">5:00 - 5:45PM</div>
+            <div class="schedule-class">Kids BJJ 8-10</div>
+            <div class="schedule-class"></div>
+            <div class="schedule-class">Kids BJJ 8-10</div>
+            <div class="schedule-class"></div>
+            <div class="schedule-class">Kids BJJ 8-10</div>
+            <div class="schedule-class"></div>
+            <div class="schedule-class"></div>
+            <div class="schedule-time-header">5:45 - 6:30PM</div>
+            <div class="schedule-class">Kids BJJ 11-13</div>
+            <div class="schedule-class"></div>
+            <div class="schedule-class">Kids BJJ 11-13</div>
+            <div class="schedule-class"></div>
+            <div class="schedule-class">Kids BJJ 11-13</div>
+            <div class="schedule-class"></div>
+            <div class="schedule-class"></div>
+            <div class="schedule-time-header">6:30 - 8:00PM</div>
+            <div class="schedule-class">Adult BJJ</div>
+            <div class="schedule-class">Adult BJJ</div>
+            <div class="schedule-class">Adult BJJ</div>
+            <div class="schedule-class">Adult BJJ</div>
+            <div class="schedule-class">Adult BJJ</div>
+            <div class="schedule-class"></div>
+            <div class="schedule-class"></div>
+            <div class="schedule-time-header">8:00 - 9:30PM</div>
+            <div class="schedule-class">Open Mat</div>
+            <div class="schedule-class">Open Mat</div>
+            <div class="schedule-class">Open Mat</div>
+            <div class="schedule-class">Open Mat</div>
+            <div class="schedule-class">Open Mat</div>
+            <div class="schedule-class"></div>
+            <div class="schedule-class"></div>
+        </div>
+    </div>
+    <div id="competition-team">
+
+    </div>
+    <div id="membership">
+
+    </div>
+    <div id="contact-us">
+
+    </div>
+</div>
+
+</html>
+
+<script type="text/javascript">
+    async function getPost() {
+        var response = await fetch();
+        var data = await response.json();
+    }
+</script>
