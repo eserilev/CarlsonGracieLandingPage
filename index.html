@@ -1,148 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
-    
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/schedule.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <meta name="author" content="Eitan Seri-Levi" />
 </head>
 
-<style>
-    .navbar {
-        display: flex;
-        margin: 0;
-        padding: 0;
-        top: 0;
-        left: 0;
-        background-color: #fefefe;
-        height: 145px;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-    }
-
-    .navbar-container {
-        padding-top: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .navbar-item {
-        font-family: 'Montserrat';
-        padding: 15px;
-        color: #000000;
-        font-size: 24px;
-    }
-
-    .navbar-item:hover {
-        background-color: #000000;
-        color: #fefefe;
-        cursor: pointer;
-    }
-
-    .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-    }
-
-    .sticky+.content {
-        padding-top: 60px;
-    }
-
-    .navbar-image {
-        height: 135px;
-        width: 135px;
-        cursor: pointer;
-    }
-
-    .header {
-        background: url('carlsonbanner.jpg') no-repeat center center fixed;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-size: cover;
-        margin-bottom: 30px;
-    }
-
-    .content {
-        padding-top: 100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .schedule-background {
-        content: "";
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-        opacity: 0.05;
-        background: url('cgsblogo.png') no-repeat center;
-        background-size: auto;
-    }
-
-    .schedule {
-        width: 1000px;
-        height: 100%;
-        position: relative;
-    }
-
-    .schedule-container {
-        font-family: 'Montserrat';
-        font-weight: 600;
-        position: relative;
-        display: grid;
-        grid-template-columns: [time] 150px [monday] auto [tuesday] auto [wednesday] auto [thursday] auto [friday] auto [saturday] auto [sunday] auto [end];
-        grid-template-rows: [row1] 50px [row2] 50px[row3] 50px [row4] 50px [row5] 50px [row6] 50px [row7] 50px [row8] 50px [row9] 50px [row10] 50px [row11] 50px;
-    }
-
-    .schedule-header {
-        background-color: #000000;
-        height: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #fefefe;
-        width: 100%;
-        font-family: 'Montserrat';
-        font-weight: 600;
-        font-size: 20px;
-    }
-
-    .schedule-time-header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-left: 1px solid #000000;
-        border-right: 1px solid #000000;
-        border-bottom: 1px solid #000000;
-    }
-
-    .schedule-day-header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-right: 1px solid #000000;
-        border-bottom: 1px solid #000000;
-    }
-
-    .schedule-class {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-right: 1px solid #000000;
-        border-bottom: 1px solid #000000;
-    }
-
-    .home-container {}
-</style>
 <div class="navbar sticky" id="navbar">
     <div class="navbar-container">
         <div>
@@ -150,9 +16,6 @@
         </div>
         <div class="navbar-item">
             Home
-        </div>
-        <div class="navbar-item">
-            Our Academy
         </div>
         <div class="navbar-item">
             Schedule
@@ -166,17 +29,70 @@
         <div class="navbar-item">
             Contact Us
         </div>
-        <div>
-            <img class="navbar-image" src="cgsblogo.png">
-        </div>
     </div>
 </div>
 <div class="header">
 </div>
 <div class="content">
     <div id="home">
-        <div class="home-container">
-
+        <div class="home-header">          
+            <img class="home-header-image" src="carlsonbanner.jpg">
+        </div>
+        <div class="home-container">  
+            <div class="home-info">
+                <div class="home-info-column">
+                    <div class="home-info-header">
+                        Kids Program
+                    </div>
+                    <div class="home-info-content">
+                        <div class="home-info-paragraph">
+                            &nbsp;&nbsp;&nbsp;Our program is a great way to improve discipline and self-esteem in kids.
+                            Our classes include specific age groups, however, we encourage younger students 
+                            to interact with older peers once they reach a certain level of technique 
+                            in order to make them comfortable with different sized opponents.
+                        </div>
+                        <div class="home-info-paragraph">
+                            &nbsp;&nbsp;&nbsp;We believe that the best anti-bullying program is not focused on the “bullies” themselves, 
+                            but instead creates a positive environment where self-defense and assertiveness becomes second nature.
+                            The kids are not instigated to fight, they are encouraged to be respectful, kind, take turns, 
+                            and when needed, use body control and submissions to defend themselves.
+                        </div>
+                        <div class="home-info-paragraph">
+                            &nbsp;&nbsp;&nbsp;There are no punch exchanges in our classes. Brazilian Jiu-Jitsu focuses on 
+                            using the opponent’s own body weight and power against themselves.
+                        </div>
+                        <div class="home-info-paragraph">
+                            &nbsp;&nbsp;&nbsp;Carlson Gracie academies uses the IBJJF belt system program.
+                        </div>
+                    </div>
+                </div>
+                <div class="home-info-column">
+                    <div class="home-info-header">
+                        Adult Program
+                    </div>
+                    <div class="home-info-content">
+                        <div class="home-info-paragraph">
+                            &nbsp;&nbsp;&nbsp;These classes are available throughout the week, two classes in the morning and one in the evening, so you can easily fit jiu jitsu training into your schedule.
+                        </div>
+                        <div class="home-info-paragraph">
+                            &nbsp;&nbsp;&nbsp;The student will learn techniques and principles that made Brazilian jiu-jitsu the most efficient and effective fighting art in the world. 
+                        </div>
+                        <div class="home-info-paragraph">
+                            &nbsp;&nbsp;&nbsp; We carry on Carlson Gracie Sr's legacy of authentic style BJJ, family, tough love, kindness, and humility.
+                        </div>
+                    </div>
+                </div>
+                <div class="home-info-column">
+                    <div class="home-info-header">
+                        Competition Team
+                    </div>
+                    <div class="home-info-content">
+                        <div class="home-info-paragraph">
+                            &nbsp;&nbsp;&nbsp;Our students compete at the highest level tournaments and hold numerous titles at the World, Pan American and Open Championships at IBJJF, NABJJF, JJWL, Abu Dhabi, BJJ PRO and NAGA federations. We also have students competing at UFC and EBI tournaments.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div id="our-academy">
